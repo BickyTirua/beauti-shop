@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BShope</title>
+
+    <!-- externel style sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- box icon cdn -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- bootstrap 5.0 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- tweenmax (greensock) cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- nav start -->
+        <div class="nav">
+            <div class="menu-open">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="brand-name">
+                <span><a href="#">BS</a></span>
+            </div>
+            <div class="card">
+                <i class='bx bxs-cart'></i>
+            </div>
+            
+            <div class="menu">
+                <div class="menu-close" onclick="Close();">
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="./about.html">Our Story</a></li>
+                    <li><a href="./contact.html">Conatct us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav end -->
+
+    
+        <!-- Cart Section -->
+        <!-- <div class="container addCart-sec">
+            <div class="row">
+                <div class="col-6">
+                    <div class="cart-img">
+                        <img src="../images/prod7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="add-cart">
+                        <div class="prodName">
+                            <p>Title</p>
+                        </div>
+                        <div class="prod-price">
+                            <p>usd $30.00</p>
+                        </div>
+                        <div class="qty-size">
+                            <input type="number" placeholder="QTY">
+                            <input type="number" placeholder="SIZE">
+                        </div>
+                        <div class="addBtn">
+                            <button>Add to bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+        <div class="spider-men">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 hero-right">
+                        <div class="hero-image">
+                              <img  src="../images/prod7.jpg"  alt="hero-img">
+                        </div>
+                  </div>
+
+                <div class="col-lg-6 hero-left addCrt-sec">
+                    <div class="add-cart">
+                        <div class="prodName">
+                            <p>Title</p>
+                        </div>
+                        <div class="prod-price">
+                            <p>usd $30.00</p>
+                        </div>
+                        <div class="qty-size">
+                            <input type="number" placeholder="QTY">
+                            <input type="number" placeholder="SIZE">
+                        </div>
+                        <div class="addBtn">
+                           <a  href="#">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+          <!-- cartgories section -->
+          <div class="container-fluid">
+            <div class="row section shop">
+                <div class="col-lg-8">
+                    <p>Do not wait; the time will never be right. Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along.</p>
+
+                    <div class="prod-link">
+                        <a href="#">Learn more <i class='bx bxs-right-arrow-alt'></i>   </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row crads">
+                <div class="col-3"></div>
+                <div class="col-lg-3 prodcut">
+                 <img src="../images/prod2.jpg" alt="">
+                   <p id="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptas nulla illum!</p>
+                </div>
+                <div class="col-lg-3 prodcut">
+                    <img src="../images/prod4.jpg" alt="">
+                   <p id="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptas nulla illum!</p>
+                </div>
+                <div class="col-lg-3 prodcut">
+                    <img src="../images/prod10.jpg" alt="">
+                   <p id="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptas nulla illum!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- cartgories section end -->
+        <!-- /Cart Section -->
+
+
+
+
+
+        <!-- footer -->
+        <div class="container-fluid footer">
+            <div class="section container">
+                <footer>
+                    <div class="row">
+                        <div class="col-lg-3 block">
+                            <p>Guwahati,As,</p>
+                            <p>Tangla,784521</p>
+                            <p>India</p>
+                        </div>
+                        <div class="col-lg-3 block">
+                            <p>FAQs</p>
+                            <p>Return Policy</p>
+                            <p>Shipping</p>
+                        </div>
+                        <div class="col-lg-3 block">
+                            <p>Careers</p>
+                            <p>Community</p>
+                            <p>Wholesale</p>
+                        </div>
+                        <div class="col-lg-3 block">
+                            <div class="sci-media">
+                                <ul>
+                                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                                    <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- footer/ -->
+
+    </div>
+    
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
